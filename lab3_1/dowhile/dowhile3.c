@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <math.h>
 
 
 double f(int);
@@ -18,7 +18,7 @@ void print(int n, int k) {
 			}
 			else {
 				printf("n = %d", i);
-				printf(" f = %d\n", f(i));
+				printf(" f = %lf\n", f(i));
 			}
 			i++;
 		} while (i < n);

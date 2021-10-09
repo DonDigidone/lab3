@@ -1,5 +1,4 @@
-#include <stdio.h>
-
+#include <math.h>
 
 
 double f(int);
@@ -9,7 +8,7 @@ int findFirstNegativeElement(double eps) {
 	f(i);
 	do {
 		f(i);
-		if (abs(f(i)) <= eps && f(i) < 0)
+		if (fabs(f(i)) <= eps && f(i) < 0)
 		{
 			return i + 1;
 		}

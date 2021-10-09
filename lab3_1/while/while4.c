@@ -1,5 +1,4 @@
-#include <stdio.h>
-
+#include <math.h>
 
 
 double f(int);
@@ -7,9 +6,9 @@ double f(int);
 int findFirstElement(double eps) {
 	int i = 0;
 	f(i);
-	while (abs(f(i)) > eps) {
+	while (fabs(f(i)) > eps) {
 		f(i);
-		if (abs(f(i)) <= eps)
+		if (fabs(f(i)) <= eps)
 		{
 			break;
 		}

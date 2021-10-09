@@ -1,5 +1,4 @@
-#include <stdio.h>
-
+#include <math.h>
 
 
 double f(int);
@@ -7,7 +6,7 @@ double f(int);
 int findFirstElement(double eps) {
 	int i = 0;
 	for (i;; i++) {
-		if (abs(f(i)) <= eps)
+		if (fabs(f(i)) <= eps)
 		{
 			break;
 		}

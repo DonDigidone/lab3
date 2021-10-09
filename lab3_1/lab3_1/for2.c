@@ -1,5 +1,4 @@
-#include <stdio.h>
-
+#include <math.h>
 
 double f(int);
 
@@ -8,7 +7,7 @@ double summ2(double eps) {
 	double a = 0;
 	int i = 0;
 	a = f(i);
-	for (i; abs(a) > eps; i++) {
+	for (i; fabs(a) > eps; i++) {
 		a = f(i);
 		sum += a;
 	}

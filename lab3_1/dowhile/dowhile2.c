@@ -1,5 +1,4 @@
-#include <stdio.h>
-
+#include <math.h>
 
 
 double f(int);
@@ -8,7 +7,7 @@ double summ2(double eps) {
 	double sum = 0;
 	int i = 0;
 	double a = f(i);
-	if (abs(a) <= eps) {
+	if (fabs(a) <= eps) {
 		return 0;
 	}
 	else {
@@ -16,7 +15,7 @@ double summ2(double eps) {
 			a = f(i);
 			sum += a;
 			++i;
-		} while (abs(a) > eps);
+		} while (fabs(a) > eps);
 		return sum;
 	}
 }

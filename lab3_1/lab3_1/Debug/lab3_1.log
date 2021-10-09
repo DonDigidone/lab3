@@ -1,0 +1,4 @@
+﻿  main.c
+D:\coding\lab3\lab3_1\lab3_1\main.c(24,15): warning C4013: system: нет определения; предполагается "extern" с возвратом типа "int"
+  LINK : не найден или не выполнена сборка D:\coding\lab3\lab3_1\Debug\for.exe при последней инкрементной компоновке; выполняется полная компоновка
+  lab3_1.vcxproj -> D:\coding\lab3\lab3_1\Debug\for.exe
